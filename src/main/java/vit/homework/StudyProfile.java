@@ -1,4 +1,4 @@
-import java.time.DayOfWeek;
+package vit.homework;
 
 public enum StudyProfile {
     MATH_SCIENTIST("математик-ученый"),

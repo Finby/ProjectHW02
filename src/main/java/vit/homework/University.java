@@ -1,3 +1,5 @@
+package vit.homework;
+
 public class University {
     private final String id;
     private String fullName;
@@ -15,7 +17,7 @@ public class University {
 
     @Override
     public String toString() {
-        return "University{" +
+        return "vit.homework.University{" +
                 "id='" + id + '\'' +
                 ", fullName='" + fullName + '\'' +
                 ", shortName='" + shortName + '\'' +
