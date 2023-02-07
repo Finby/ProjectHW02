@@ -1,10 +1,10 @@
 package vit.homework;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 
 @Builder
-@Getter
+@Data
 public class Student {
     private final String fullName;
     private String universityId;
