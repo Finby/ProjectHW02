@@ -26,17 +26,6 @@ public class University {
                 '}';
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public void setShortName(String shortName) {
-        this.shortName = shortName;
-    }
-
-    public void setMainProfile(StudyProfile mainProfile) {
-        this.mainProfile = mainProfile;
-    }
 
     public String getId() {
         return id;
