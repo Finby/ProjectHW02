@@ -1,4 +1,6 @@
-package vit.homework;
+package vit.homework.model;
+
+import vit.homework.enums.StudyProfile;
 
 public class University {
     private final String id;
