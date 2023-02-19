@@ -1,4 +1,4 @@
-package vit.homework.model;
+package vit.homework.model.university;
 
 import vit.homework.enums.StudyProfile;
 
@@ -9,13 +9,7 @@ public class University {
     private final int yearOfFoundation;
     private final StudyProfile mainProfile;
 
-//    public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
-//        this.id = id;
-//        this.fullName = fullName;
-//        this.shortName = shortName;
-//        this.yearOfFoundation = yearOfFoundation;
-//        this.mainProfile = mainProfile;
-//    }
+
     public University(UniversityBuilder builder) {
         this.id = builder.id;
         this.fullName = builder.fullName;

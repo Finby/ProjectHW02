@@ -1,4 +1,4 @@
-package vit.homework.model;
+package vit.homework.model.student;
 
 import lombok.Builder;
 import lombok.Data;

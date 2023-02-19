@@ -4,8 +4,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import vit.homework.enums.StudyProfile;
-import vit.homework.model.Student;
-import vit.homework.model.University;
+import vit.homework.model.student.Student;
+import vit.homework.model.university.University;
 
 import java.io.FileInputStream;
 import java.io.IOException;
