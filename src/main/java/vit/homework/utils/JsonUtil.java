@@ -2,6 +2,7 @@ package vit.homework.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import vit.homework.model.student.Student;
 import vit.homework.model.university.University;
 
@@ -48,7 +49,7 @@ public class JsonUtil {
     }
 
     public static List<Student> deserializeStudentList(String studentListString) {
-        return new Gson().fromJson(studentListString, List.class);
+        return new Gson().fromJson(studentListString, new TypeToken<List<Student>>() {}.getType() );
     }
 
     public static String serializeUniversityList(List<University> universityList) {
@@ -59,6 +60,6 @@ public class JsonUtil {
     }
 
     public static List<University> deserializeUniversityList(String universityListString) {
-        return new Gson().fromJson(universityListString, List.class);
+        return new Gson().fromJson(universityListString, new TypeToken<List<University>>() {}.getType() );
     }
 }
