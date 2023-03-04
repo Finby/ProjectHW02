@@ -1,12 +1,18 @@
 package vit.homework.model.university;
 
+import com.google.gson.annotations.SerializedName;
 import vit.homework.enums.StudyProfile;
 
 public class University {
+    @SerializedName("ID")
     private final String id;
+    @SerializedName("Full name")
     private final String fullName;
+    @SerializedName("Short name")
     private final String shortName;
+    @SerializedName("Foundation year")
     private final int yearOfFoundation;
+    @SerializedName("Profile")
     private final StudyProfile mainProfile;
 
 

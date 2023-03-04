@@ -9,8 +9,10 @@ import vit.homework.utils.JsonUtil;
 import vit.homework.utils.SelectComparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static vit.homework.io.StudsAndUnivOps.*;
 
@@ -41,8 +43,23 @@ public class Main {
         // DeSerialize
         System.out.println(JsonUtil.deserializeStudent(serializedStudent));
         System.out.println(JsonUtil.deserializeUniversity(serializedUniversity));
-        System.out.println(JsonUtil.deserializeStudentList(serializedStudentList));
-        System.out.println(JsonUtil.deserializeUniversityList(serializedUniversityList));
+
+        List<Student> deserializedStudentList = JsonUtil.deserializeStudentList(serializedStudentList);
+        System.out.println("Same number of Students: " + (deserializedStudentList.size() == studentList.size()));
+
+        List<University> deserializeUniversityList = JsonUtil.deserializeUniversityList(serializedUniversityList);
+        System.out.println("Same number of Universities: " + (deserializeUniversityList.size() == universityList.size()));
+
+        // Serialize via Stream and print
+        System.out.println("--------------------------------");
+        studentList.stream().limit(3).map(JsonUtil::serializeStudent).forEach(System.out::println);
+
+        // Serialize and Deserialize via Stream and print
+        System.out.println("--------------------------------");
+        studentList.stream().map(JsonUtil::serializeStudent).map(JsonUtil::deserializeStudent).forEach(System.out::println);
+
+
+
 
     }
     public static void mainXLSX() {
