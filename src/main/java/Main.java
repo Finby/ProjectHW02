@@ -5,6 +5,7 @@ import vit.homework.enums.StudyProfile;
 import vit.homework.model.student.StudentComparatorInterface;
 import vit.homework.model.university.University;
 import vit.homework.model.university.UniversityComparatorIntarface;
+import vit.homework.utils.JsonUtil;
 import vit.homework.utils.SelectComparator;
 
 import java.util.ArrayList;
@@ -18,9 +19,34 @@ public class Main {
     static List<Student> studentList = new ArrayList<>();
     static List<University> universityList = new ArrayList<>();
     static String xlsFilePath = "src/main/java/resources/universityInfo.xlsx";
+
     public static void main(String[] args) {
-//        manual_version();
         load_from_xml();
+//        mainXLSX;
+        mainJSON();
+    }
+
+    public static void mainJSON() {
+        // serialize
+        String serializedStudent = JsonUtil.serializeStudent(studentList.get(0));
+        System.out.println(serializedStudent);
+        String serializedUniversity = JsonUtil.serializeUniversity(universityList.get(0));
+        System.out.println(serializedUniversity);
+        String serializedStudentList = JsonUtil.serializeStudentList(studentList);
+        System.out.println(serializedStudentList);
+        String serializedUniversityList = JsonUtil.serializeUniversityList(universityList);
+        System.out.println(serializedUniversityList);
+
+
+        // DeSerialize
+        System.out.println(JsonUtil.deserializeStudent(serializedStudent));
+        System.out.println(JsonUtil.deserializeUniversity(serializedUniversity));
+        System.out.println(JsonUtil.deserializeStudentList(serializedStudentList));
+        System.out.println(JsonUtil.deserializeUniversityList(serializedUniversityList));
+
+    }
+    public static void mainXLSX() {
+//        manual_version();
 
         StudentComparatorInterface stByScore = SelectComparator.SelectStudentComparator(
                 StudentComparators.StudentComparatorByAvgExamScore);
