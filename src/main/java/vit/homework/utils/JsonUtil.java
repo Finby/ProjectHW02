@@ -60,6 +60,6 @@ public class JsonUtil {
     }
 
     public static List<University> deserializeUniversityList(String universityListString) {
-        return new Gson().fromJson(universityListString, new TypeToken<List<University>>() {}.getType() );
+        return new Gson().fromJson(universityListString, new TypeToken<List<University>>() {}.getType());
     }
 }
