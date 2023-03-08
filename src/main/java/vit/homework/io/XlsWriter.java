@@ -1,6 +1,8 @@
 package vit.homework.io;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -32,6 +34,12 @@ public class XlsWriter {
         Cell cell;
         int rowCount = 0;
 
+        // bold style
+        CellStyle styleBold = workbook.createCellStyle();//Create style
+        Font font = workbook.createFont();//Create font
+        font.setBold(true);//Make font bold
+        styleBold.setFont(font);//set it to bold
+
         String[] titles = {"Profile", "Avg Scores",
                 "Students Number", "University Number", "University List"};
         row = sheet.createRow(rowCount++);
@@ -39,6 +47,7 @@ public class XlsWriter {
         for (String str: titles) {
             cell = row.createCell(columnCount);
             cell.setCellValue(titles[columnCount-1]);
+            cell.setCellStyle(styleBold);
             columnCount++;
         }
 
@@ -62,6 +71,7 @@ public class XlsWriter {
              cell.setCellValue((String) String.join(", ", stat.getProfileUniversityList()));
 
         }
+
 
 
         try (FileOutputStream outputStream = new FileOutputStream(filePath)) {
