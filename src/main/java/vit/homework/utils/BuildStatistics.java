@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class BuildStatistics {
-
+// TODO
+//    use more Stream() functionality where it's possible
     public static List<Statistics> createStatistic(List<Student> students, List<University> universities) {
 
         List<Statistics> statisticsList = new ArrayList<>();
@@ -24,13 +25,12 @@ public class BuildStatistics {
     }
 
     private static Statistics createStatisticRow(StudyProfile mainProfile, List<Student> students, List<University> universities) {
-        StudyProfile profile = mainProfile;
         Double profileAverageScores = calculateProfileAverageScores(mainProfile, students, universities);
         int profileStudentsNumber = calculateProfileStudentsNumber(mainProfile, students, universities);
         int profileUniversityNumber = calculateProfileUniversityNumber(mainProfile, universities);
         List<String> profileUniversityList = createListOfProfileUniversitets(mainProfile, universities);
 
-        return new Statistics(profile, profileAverageScores, profileStudentsNumber,
+        return new Statistics(mainProfile, profileAverageScores, profileStudentsNumber,
                 profileUniversityNumber, profileUniversityList);
     }
 
