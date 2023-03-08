@@ -1,10 +1,14 @@
+import org.apache.commons.collections4.BagUtils;
 import vit.homework.enums.StudentComparators;
 import vit.homework.enums.UniversityComparators;
+import vit.homework.io.XlsWriter;
+import vit.homework.model.Statistics;
 import vit.homework.model.student.Student;
 import vit.homework.enums.StudyProfile;
 import vit.homework.model.student.StudentComparatorInterface;
 import vit.homework.model.university.University;
 import vit.homework.model.university.UniversityComparatorIntarface;
+import vit.homework.utils.BuildStatistics;
 import vit.homework.utils.JsonUtil;
 import vit.homework.utils.SelectComparator;
 
@@ -21,11 +25,15 @@ public class Main {
     static List<Student> studentList = new ArrayList<>();
     static List<University> universityList = new ArrayList<>();
     static String xlsFilePath = "src/main/java/resources/universityInfo.xlsx";
+    static String xlsStatFilePath = "src/main/java/resources/statistic.xlsx";
+
 
     public static void main(String[] args) {
         load_from_xml();
 //        mainXLSX;
-        mainJSON();
+//        mainJSON();
+        List<Statistics> statisticsList = BuildStatistics.createStatistic(studentList, universityList);
+        XlsWriter.writeStatisticToFile(statisticsList, xlsStatFilePath);
     }
 
 
