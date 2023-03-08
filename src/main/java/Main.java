@@ -28,6 +28,8 @@ public class Main {
         mainJSON();
     }
 
+
+
     public static void mainJSON() {
         // serialize
         String serializedStudent = JsonUtil.serializeStudent(studentList.get(0));
