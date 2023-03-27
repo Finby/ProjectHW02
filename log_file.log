@@ -1,0 +1,187 @@
+[DEBUG] 2023-03-27 17:30:50.637 [main] Main - We are starting !!!
+[DEBUG] 2023-03-27 17:30:51.332 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-03-27 17:30:51.336 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-03-27 17:30:51.338 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2023-03-27 17:30:51.340 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2023-03-27 17:30:52.023 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:30:52.024 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:30:52.164 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-03-27 17:30:52.166 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-03-27 17:30:52.167 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2023-03-27 17:30:52.168 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2023-03-27 17:30:52.186 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:30:52.187 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:30:52.395 [main] ZipPackage - Save core properties part
+[DEBUG] 2023-03-27 17:30:52.395 [main] ZipPackage - Save content types part
+[DEBUG] 2023-03-27 17:30:52.592 [main] ZipPackage - Save package relationships
+[DEBUG] 2023-03-27 17:30:52.596 [main] ZipPackage - Save part 'docProps/app.xml'
+[DEBUG] 2023-03-27 17:30:52.597 [main] ZipPackage - Save part 'docProps/core.xml'
+[DEBUG] 2023-03-27 17:30:52.600 [main] ZipPackage - Save part 'xl/sharedStrings.xml'
+[DEBUG] 2023-03-27 17:30:52.601 [main] ZipPackage - Save part 'xl/styles.xml'
+[DEBUG] 2023-03-27 17:30:52.601 [main] ZipPackage - Save part 'xl/workbook.xml'
+[DEBUG] 2023-03-27 17:30:52.603 [main] ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+[DEBUG] 2023-03-27 17:30:52.608 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 17:34:19.804 [main] Main - We are starting !!!
+[DEBUG] 2023-03-27 17:34:20.392 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-03-27 17:34:20.396 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-03-27 17:34:20.398 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2023-03-27 17:34:20.401 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2023-03-27 17:34:20.996 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:34:20.997 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:34:21.185 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2023-03-27 17:34:21.187 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+[DEBUG] 2023-03-27 17:34:21.188 [main] PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+[DEBUG] 2023-03-27 17:34:21.189 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[DEBUG] 2023-03-27 17:34:21.206 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:34:21.207 [main] POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+[DEBUG] 2023-03-27 17:34:21.643 [main] ZipPackage - Save core properties part
+[DEBUG] 2023-03-27 17:34:21.646 [main] ZipPackage - Save content types part
+[DEBUG] 2023-03-27 17:34:21.869 [main] ZipPackage - Save package relationships
+[DEBUG] 2023-03-27 17:34:21.873 [main] ZipPackage - Save part 'docProps/app.xml'
+[DEBUG] 2023-03-27 17:34:21.874 [main] ZipPackage - Save part 'docProps/core.xml'
+[DEBUG] 2023-03-27 17:34:21.877 [main] ZipPackage - Save part 'xl/sharedStrings.xml'
+[DEBUG] 2023-03-27 17:34:21.877 [main] ZipPackage - Save part 'xl/styles.xml'
+[DEBUG] 2023-03-27 17:34:21.878 [main] ZipPackage - Save part 'xl/workbook.xml'
+[DEBUG] 2023-03-27 17:34:21.880 [main] ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+[INFO ] 2023-03-27 17:34:21.885 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 17:34:38.762 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 17:34:39.982 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 17:44:10.564 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 17:44:12.215 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 17:44:12.363 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 17:44:13.732 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 17:51:11.740 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 17:51:13.259 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 17:51:13.262 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 17:51:13.307 [main] XlsWriter - XlsWriter.writeStatisticToFile() - Starting.
+[INFO ] 2023-03-27 17:51:13.700 [main] XlsWriter - XlsWriter.writeStatisticToFile() - Successfully ended.
+[INFO ] 2023-03-27 17:51:13.700 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 18:28:49.500 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:28:51.158 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:28:51.184 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:31:45.596 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:31:46.953 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:31:46.959 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:33:57.450 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:33:58.733 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:33:58.942 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:36:23.645 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:36:24.764 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:36:24.776 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:43:58.121 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:43:59.927 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:43:59.961 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:45:41.669 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:45:42.576 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:45:42.587 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:46:34.201 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:46:35.011 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:46:35.023 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:47:36.363 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:47:37.665 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:47:37.694 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:47:38.170 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 18:52:34.857 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:52:36.792 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:52:36.795 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 18:52:38.206 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 18:53:23.360 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 18:53:24.877 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 18:53:24.948 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:41:34.217 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 23:41:35.402 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 23:41:35.414 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:41:35.759 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 23:42:49.040 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 23:42:49.894 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 23:42:49.897 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:42:50.042 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 23:56:50.300 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 23:56:51.743 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 23:56:51.788 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:56:52.062 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 23:58:29.226 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 23:58:30.003 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 23:58:30.005 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:58:30.152 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-27 23:59:04.939 [main] Main - We are starting !!!
+[INFO ] 2023-03-27 23:59:05.728 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-27 23:59:05.730 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-27 23:59:05.868 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:03:41.916 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:03:42.684 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:03:42.687 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:03:42.829 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:06:54.368 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:06:55.595 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:06:55.607 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:06:55.906 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:09:30.730 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:09:31.610 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:09:31.638 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:09:32.114 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:09:59.974 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:10:01.373 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:10:01.378 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:13:25.172 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:13:25.900 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:13:25.904 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:13:26.242 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:14:13.991 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:14:14.961 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:14:14.965 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:14:15.128 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:26:53.286 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:26:54.613 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:26:54.616 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:26:54.890 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 00:26:54.896 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 00:26:54.897 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:49:41.325 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:49:42.581 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:49:42.584 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:52:29.400 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:52:30.238 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:52:30.241 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:53:18.043 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:53:18.814 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:53:18.816 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:53:48.470 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:53:49.239 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:53:49.241 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:53:49.431 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 00:53:49.440 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 00:53:49.440 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 00:56:17.881 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:56:18.623 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:56:18.625 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:57:38.959 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:57:39.768 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:57:39.771 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:59:34.273 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 00:59:35.057 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 00:59:35.059 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 00:59:35.236 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 00:59:35.245 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 00:59:35.245 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 01:12:47.780 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 01:12:49.148 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 01:12:49.156 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 01:12:49.562 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 01:12:49.609 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 01:12:49.610 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 01:14:21.558 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 01:14:22.313 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 01:14:22.318 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 01:19:05.930 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 01:19:06.685 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 01:19:06.691 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 01:19:06.840 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 01:19:06.850 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 01:19:06.850 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 01:20:33.444 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 01:20:34.185 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 01:20:34.191 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 01:20:34.328 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 01:20:34.335 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 01:20:34.335 [main] Main - We are done. Goodbye

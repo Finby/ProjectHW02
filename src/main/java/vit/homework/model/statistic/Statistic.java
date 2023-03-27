@@ -1,18 +1,23 @@
-package vit.homework.model;
+package vit.homework.model.statistic;
 
 import vit.homework.enums.StudyProfile;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 
-public class Statistics {
-    public final StudyProfile profile;
-    public final Double profileAverageScores;
-    public final int profileStudentsNumber;
-    public final int profileUniversityNumber;
-    public final List<String> profileUniversityList;
+@XmlType(propOrder = { "profile", "profileAverageScores"})
+public class Statistic {
+    @XmlElement(name = "universityProfile")
+    private StudyProfile profile;
+    @XmlElement(name = "avgScore")
+    private Double profileAverageScores;
+    private int profileStudentsNumber;
+    private int profileUniversityNumber;
+    private List<String> profileUniversityList;
 
-    public Statistics(StudyProfile profile, Double profileAverageScores, int profileStudentsNumber,
-                      int profileUniversityNumber, List<String> profileUniversityList) {
+    public Statistic(StudyProfile profile, Double profileAverageScores, int profileStudentsNumber,
+                     int profileUniversityNumber, List<String> profileUniversityList) {
         this.profile = profile;
         this.profileAverageScores = profileAverageScores;
         this.profileStudentsNumber = profileStudentsNumber;
@@ -20,6 +25,8 @@ public class Statistics {
         this.profileUniversityList = profileUniversityList;
     }
 
+    public Statistic() {
+    }
     public StudyProfile getProfile() {
         return profile;
     }

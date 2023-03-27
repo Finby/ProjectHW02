@@ -1,8 +1,10 @@
-import org.apache.commons.collections4.BagUtils;
+package vit.homework;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import vit.homework.enums.StudentComparators;
 import vit.homework.enums.UniversityComparators;
-import vit.homework.io.XlsWriter;
-import vit.homework.model.Statistics;
+import vit.homework.model.statistic.Statistic;
 import vit.homework.model.student.Student;
 import vit.homework.enums.StudyProfile;
 import vit.homework.model.student.StudentComparatorInterface;
@@ -11,12 +13,12 @@ import vit.homework.model.university.UniversityComparatorIntarface;
 import vit.homework.utils.BuildStatistics;
 import vit.homework.utils.JsonUtil;
 import vit.homework.utils.SelectComparator;
+import vit.homework.utils.MarshalToXML;
 
+import javax.xml.bind.JAXBException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static vit.homework.io.StudsAndUnivOps.*;
 
@@ -24,16 +26,30 @@ public class Main {
 
     static List<Student> studentList = new ArrayList<>();
     static List<University> universityList = new ArrayList<>();
-    static String xlsFilePath = "src/main/java/resources/universityInfo.xlsx";
-    static String xlsStatFilePath = "src/main/java/resources/statistic.xlsx";
-
+    static List<Statistic> statisticList;
+    static String xlsFilePath = "src/main/java/vit/homework/resources/universityInfo.xlsx";
+    static String xlsStatFilePath = "src/main/java/vit/homework/resources/statistic.xlsx";
+    static {
+        System.setProperty("log4j.configurationFile", "src/main/java/vit/homework/resources/log4j2.xml");
+    }
+    private static final Logger log = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+        log.info("We are starting !!!");
         load_from_xml();
 //        mainXLSX;
 //        mainJSON();
-        List<Statistics> statisticsList = BuildStatistics.createStatistic(studentList, universityList);
-        XlsWriter.writeStatisticToFile(statisticsList, xlsStatFilePath);
+
+        statisticList = BuildStatistics.createStatistic(studentList, universityList);
+//        XlsWriter.writeStatisticToFile(statisticsList, xlsStatFilePath);
+
+        try {
+            MarshalToXML.writeData(universityList, studentList, statisticList);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
+        }
+
+        log.info("We are done. Goodbye");
     }
 
 

@@ -3,17 +3,22 @@ package vit.homework.model.university;
 import com.google.gson.annotations.SerializedName;
 import vit.homework.enums.StudyProfile;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(propOrder = { "id", "fullName", "mainProfile" })
 public class University {
     @SerializedName("ID")
-    private final String id;
+    private String id=null;
     @SerializedName("Full name")
-    private final String fullName;
+    private String fullName=null;
     @SerializedName("Short name")
-    private final String shortName;
+    private String shortName=null;
     @SerializedName("Foundation year")
-    private final int yearOfFoundation;
+    private int yearOfFoundation=1900;
     @SerializedName("Profile")
-    private final StudyProfile mainProfile;
+    private StudyProfile mainProfile=null;
 
 
     public University(UniversityBuilder builder) {
@@ -22,6 +27,9 @@ public class University {
         this.shortName = builder.shortName;
         this.yearOfFoundation = builder.yearOfFoundation;
         this.mainProfile = builder.mainProfile;
+    }
+
+    public University() {
     }
 
     @Override
@@ -35,10 +43,12 @@ public class University {
                 '}';
     }
 
+    @XmlElement(name = "universityId")
     public String getId() {
         return id;
     }
 
+    @XmlElement(name = "universityName")
     public String getFullName() {
         return fullName;
     }
@@ -51,6 +61,7 @@ public class University {
         return yearOfFoundation;
     }
 
+    @XmlElement(name = "universityProfile")
     public StudyProfile getMainProfile() {
         return mainProfile;
     }
