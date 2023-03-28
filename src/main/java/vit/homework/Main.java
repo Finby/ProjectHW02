@@ -1,7 +1,5 @@
 package vit.homework;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import vit.homework.enums.StudentComparators;
@@ -9,25 +7,29 @@ import vit.homework.enums.UniversityComparators;
 import vit.homework.io.JSONWriter;
 import vit.homework.model.statistic.Statistic;
 import vit.homework.model.student.Student;
-import vit.homework.enums.StudyProfile;
+import vit.homework.model.student.StudentComparatorByAvgExamScore;
+import vit.homework.model.student.StudentComparatorByFullName;
 import vit.homework.model.student.StudentComparatorInterface;
 import vit.homework.model.university.University;
+import vit.homework.model.university.UniversityComparatorByFullName;
+import vit.homework.model.university.UniversityComparatorByYearOfFoundation;
 import vit.homework.model.university.UniversityComparatorIntarface;
+import vit.homework.model.xml.StatisticXML;
+import vit.homework.model.xml.StudentXML;
+import vit.homework.model.xml.UniversitiesXML;
 import vit.homework.model.xml.XMLAgregated;
 import vit.homework.utils.*;
 
-import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import static vit.homework.io.StudsAndUnivOps.*;
+import static vit.homework.io.StudsAndUnivOps.readXlsStudents;
+import static vit.homework.io.StudsAndUnivOps.readXlsUniversities;
 
 public class Main {
 
@@ -55,20 +57,23 @@ public class Main {
         statisticList = BuildStatistics.createStatistic(studentList, universityList);
 //        XlsWriter.writeStatisticToFile(statisticsList, xlsStatFilePath);
 
+        log.info("Step 3. Create statistics");
+        universityList.sort(new UniversityComparatorByFullName());
+        studentList.sort(new StudentComparatorByAvgExamScore());
 
-        log.info("Step 3. Do XMLMarshaling and write to xml");
-        try {
-            MarshalToXML.writeData(universityList, studentList, statisticList);
-        } catch (JAXBException e) {
-            throw new RuntimeException(e);
-        }
+        log.info("Step 4. Do XML Marshaling and write to file");
+        XMLAgregated xmlAgregated = new XMLAgregated(
+                new UniversitiesXML((ArrayList<University>) universityList),
+                new StudentXML((ArrayList<Student>) studentList),
+                new StatisticXML((ArrayList<Statistic>) statisticList));
+        MarshalToXML.writeData(xmlAgregated);
 
-        log.info("Unmarshalling from XML and converting to JSON.");
+        log.info("Step 5. Unmarshalling from XML to JSON-string and write to file");
         BufferedInputStream bfInputStr;
         XMLAgregated readFileData;
         try {
             // TODO: get today's file name automatically
-            bfInputStr = new BufferedInputStream(new FileInputStream("src/main/java/vit/homework/resources/xmlReqs/1_req2023-03-28.xml"));
+            bfInputStr = new BufferedInputStream(new FileInputStream("src/main/java/vit/homework/resources/xmlReqs/req2023-03-28.xml"));
             readFileData = Converters.convertXmlToObject(bfInputStr);
             String json = Converters.convertObjectToJson(readFileData);
             JSONWriter.writeToFile(json, null);

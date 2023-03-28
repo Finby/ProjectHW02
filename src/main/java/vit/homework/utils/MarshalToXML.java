@@ -24,22 +24,32 @@ public class MarshalToXML {
         System.setProperty("log4j.configurationFile", "src/main/java/vit/homework/resources/log4j2.xml");
     }
     private static final Logger log = LogManager.getLogger(Main.class);
+    public static void writeData(XMLAgregated xmlAgregated) {
+        //        JAXBContext context = JAXBContext.newInstance(UniversitiesXML.class);
+        JAXBContext context = null;
+        Marshaller marshaller = null;
+        try {
+            context = JAXBContext.newInstance(XMLAgregated.class);
+            marshaller = context.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
+        }
+//        marshaller.marshal(universitiesXML, System.out);
+        XMLWriter.writeToFile(marshaller, xmlAgregated, null);
+        log.info("MarshalToXML.writeData() - End.");
+    }
+
     public static void writeData(List<University> universitiesList,
                                  List<Student> studentList,
-                                 List<Statistic> statisticList) throws JAXBException {
+                                 List<Statistic> statisticList){
         log.info("MarshalToXML.writeData() - Start.");
         UniversitiesXML universitiesXML = new UniversitiesXML((ArrayList<University>) universitiesList);
         StudentXML studentXML = new StudentXML((ArrayList<Student>) studentList);
         StatisticXML statisticXML = new StatisticXML((ArrayList<Statistic>) statisticList);
         XMLAgregated xmlAgregated = new XMLAgregated(universitiesXML, studentXML, statisticXML);
 
-//        JAXBContext context = JAXBContext.newInstance(UniversitiesXML.class);
-        JAXBContext context = JAXBContext.newInstance(XMLAgregated.class);
-        Marshaller marshaller = context.createMarshaller();
-        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-//        marshaller.marshal(universitiesXML, System.out);
+        writeData(xmlAgregated);
 
-        XMLWriter.writeToFile(marshaller, xmlAgregated, null);
-        log.info("MarshalToXML.writeData() - End.");
     }
 }

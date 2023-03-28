@@ -16,7 +16,7 @@ public class University {
     @SerializedName("Short name")
     private String shortName=null;
     @SerializedName("Foundation year")
-    private int yearOfFoundation=1900;
+    private int yearOfFoundation;
     @SerializedName("Profile")
     private StudyProfile mainProfile=null;
 
