@@ -74,6 +74,9 @@ public class Main {
         try {
             // TODO: get today's file name automatically
             bfInputStr = new BufferedInputStream(new FileInputStream("src/main/java/vit/homework/resources/xmlReqs/req2023-03-28.xml"));
+
+            // TODO: some problems with reading University structure from XML
+            // "Foundation year" and "Course" - excessive fields
             readFileData = Converters.convertXmlToObject(bfInputStr);
             String json = Converters.convertObjectToJson(readFileData);
             JSONWriter.writeToFile(json, null);

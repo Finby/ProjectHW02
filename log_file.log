@@ -308,3 +308,63 @@
 [INFO ] 2023-03-28 23:05:17.291 [main] JSONWriter - JSONWriter.writeToFile() - Starting.
 [INFO ] 2023-03-28 23:05:17.296 [main] JSONWriter - JSONWriter.writeToFile() - Successfully ended.
 [INFO ] 2023-03-28 23:05:17.296 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 23:12:11.753 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 23:12:11.758 [main] Main - Step 1. reading data from .xlsx
+[INFO ] 2023-03-28 23:12:13.186 [main] Main - Step 2. Create statistics
+[INFO ] 2023-03-28 23:12:13.188 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 23:12:13.212 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 23:12:13.212 [main] Main - Step 3. Create statistics
+[INFO ] 2023-03-28 23:12:30.299 [main] Main - Step 4. Do XML Marshaling and write to file
+[INFO ] 2023-03-28 23:15:34.304 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 23:15:34.309 [main] Main - Step 1. reading data from .xlsx
+[INFO ] 2023-03-28 23:15:36.890 [main] Main - Step 2. Create statistics
+[INFO ] 2023-03-28 23:15:36.922 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 23:15:36.962 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 23:15:36.963 [main] Main - Step 3. Create statistics
+[INFO ] 2023-03-28 23:15:36.978 [main] Main - Step 4. Do XML Marshaling and write to file
+[INFO ] 2023-03-28 23:15:37.688 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:16:01.635 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:16:04.142 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 23:16:07.915 [main] Main - Step 5. Unmarshalling from XML to JSON-string and write to file
+[INFO ] 2023-03-28 23:21:34.163 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 23:21:34.167 [main] Main - Step 1. reading data from .xlsx
+[INFO ] 2023-03-28 23:21:35.228 [main] Main - Step 2. Create statistics
+[INFO ] 2023-03-28 23:21:35.229 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 23:21:35.249 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 23:21:35.249 [main] Main - Step 3. Create statistics
+[INFO ] 2023-03-28 23:21:35.255 [main] Main - Step 4. Do XML Marshaling and write to file
+[INFO ] 2023-03-28 23:21:35.560 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:21:35.573 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:21:35.573 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 23:21:35.573 [main] Main - Step 5. Unmarshalling from XML to JSON-string and write to file
+[INFO ] 2023-03-28 23:21:35.812 [main] JSONWriter - JSONWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:21:35.816 [main] JSONWriter - JSONWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:21:35.817 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 23:23:44.657 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 23:23:44.660 [main] Main - Step 1. reading data from .xlsx
+[INFO ] 2023-03-28 23:23:45.683 [main] Main - Step 2. Create statistics
+[INFO ] 2023-03-28 23:23:45.684 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 23:23:45.687 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 23:23:45.687 [main] Main - Step 3. Create statistics
+[INFO ] 2023-03-28 23:23:45.692 [main] Main - Step 4. Do XML Marshaling and write to file
+[INFO ] 2023-03-28 23:23:45.958 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:23:45.970 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:23:45.970 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 23:23:45.971 [main] Main - Step 5. Unmarshalling from XML to JSON-string and write to file
+[INFO ] 2023-03-28 23:23:46.081 [main] JSONWriter - JSONWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:23:46.086 [main] JSONWriter - JSONWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:23:46.086 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 23:25:09.156 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 23:25:09.160 [main] Main - Step 1. reading data from .xlsx
+[INFO ] 2023-03-28 23:25:09.917 [main] Main - Step 2. Create statistics
+[INFO ] 2023-03-28 23:25:09.918 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 23:25:09.920 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 23:25:09.920 [main] Main - Step 3. Create statistics
+[INFO ] 2023-03-28 23:25:09.925 [main] Main - Step 4. Do XML Marshaling and write to file
+[INFO ] 2023-03-28 23:25:10.064 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:25:10.071 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:25:10.072 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 23:25:10.072 [main] Main - Step 5. Unmarshalling from XML to JSON-string and write to file
+[INFO ] 2023-03-28 23:25:10.140 [main] JSONWriter - JSONWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 23:25:10.155 [main] JSONWriter - JSONWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 23:25:10.156 [main] Main - We are done. Goodbye

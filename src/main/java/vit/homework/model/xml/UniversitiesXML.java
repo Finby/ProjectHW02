@@ -10,9 +10,9 @@ public class UniversitiesXML {
     @XmlElement(name = "universityEntry")
     private ArrayList<University> UniversityList;
 
-    public void setUniversityList(ArrayList<University> universityList) {
-        UniversityList = universityList;
-    }
+//    public void setUniversityList(ArrayList<University> universityList) {
+//        UniversityList = universityList;
+//    }
 
     public UniversitiesXML() {
     }
