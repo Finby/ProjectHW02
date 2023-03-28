@@ -18,13 +18,13 @@ public class Converters {
         return (XMLAgregated) unmarshaller.unmarshal(in);
     }
 
-    public static String convertObjectToJson(XMLAgregated input) {
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        gsonBuilder.setPrettyPrinting();
-        gsonBuilder.disableHtmlEscaping();
-        gsonBuilder.serializeSpecialFloatingPointValues();
+    public static String convertObjectToJsonString(XMLAgregated input) {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .disableHtmlEscaping()
+                .serializeSpecialFloatingPointValues()
+                .create();
 
-        Gson gson = gsonBuilder.create();
         return gson.toJson(input);
     }
 }

@@ -8,11 +8,9 @@ import vit.homework.io.JSONWriter;
 import vit.homework.model.statistic.Statistic;
 import vit.homework.model.student.Student;
 import vit.homework.model.student.StudentComparatorByAvgExamScore;
-import vit.homework.model.student.StudentComparatorByFullName;
 import vit.homework.model.student.StudentComparatorInterface;
 import vit.homework.model.university.University;
 import vit.homework.model.university.UniversityComparatorByFullName;
-import vit.homework.model.university.UniversityComparatorByYearOfFoundation;
 import vit.homework.model.university.UniversityComparatorIntarface;
 import vit.homework.model.xml.StatisticXML;
 import vit.homework.model.xml.StudentXML;
@@ -75,10 +73,13 @@ public class Main {
             // TODO: get today's file name automatically
             bfInputStr = new BufferedInputStream(new FileInputStream("src/main/java/vit/homework/resources/xmlReqs/req2023-03-28.xml"));
 
-            // TODO: some problems with reading University structure from XML
-            // "Foundation year" and "Course" - excessive fields
+            /* TODO: some problems with reading University and Student structure from XML
+            "Foundation year" and "Course" - excessive fields
+             @Expose + excludeFieldsWithoutExposeAnnotation() - doesn't work
+             to check: -- com.google.gson.ExclusionStrategy --
+             */
             readFileData = Converters.convertXmlToObject(bfInputStr);
-            String json = Converters.convertObjectToJson(readFileData);
+            String json = Converters.convertObjectToJsonString(readFileData);
             JSONWriter.writeToFile(json, null);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

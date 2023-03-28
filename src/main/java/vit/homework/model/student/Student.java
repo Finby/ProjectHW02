@@ -1,5 +1,6 @@
 package vit.homework.model.student;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
@@ -11,10 +12,13 @@ import javax.xml.bind.annotation.XmlType;
 //@Data
 @XmlType(propOrder = { "fullName", "universityId", "avgExamScore" })
 public class Student {
+
+    @Expose
     @SerializedName("FIO")
     @XmlElement(name = "studentName")
     private String fullName;
 
+    @Expose
     @SerializedName("University ID")
     @XmlElement(name = "universityId")
     private String universityId;
@@ -22,6 +26,7 @@ public class Student {
     @SerializedName("Course")
     private int currentCourseNumber;
 
+    @Expose
     @SerializedName("Average Scores")
     @XmlElement(name = "avgScore")
     private float avgExamScore;

@@ -1,5 +1,6 @@
 package vit.homework.model.university;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import vit.homework.enums.StudyProfile;
 
@@ -9,16 +10,24 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlType(propOrder = { "id", "fullName", "mainProfile" })
 public class University {
+
+    @Expose
     @SerializedName("ID")
     @XmlElement(name = "universityId")
     private String id;
+
+    @Expose
     @SerializedName("Full name")
     @XmlElement(name = "universityName")
     private String fullName;
+
     @SerializedName("Short name")
     private String shortName;
+
     @SerializedName("Foundation year")
     private int yearOfFoundation;
+
+    @Expose
     @SerializedName("Profile")
     @XmlElement(name = "universityProfile")
     private StudyProfile mainProfile=null;
