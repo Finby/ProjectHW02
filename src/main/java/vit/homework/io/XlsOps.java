@@ -15,12 +15,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public class XlsWriter {
+public class XlsOps {
 
     static {
         System.setProperty("log4j.configurationFile", "src/main/java/vit/homework/resources/log4j2.xml");
     }
-    private static final Logger log = LogManager.getLogger(XlsWriter.class);
+    private static final Logger log = LogManager.getLogger(XlsOps.class);
     public static void writeToFile(List<Statistic> statisticList, String filePath) {
         log.log(Level.INFO, "XlsWriter.writeStatisticToFile() - Starting.");
         XSSFWorkbook workbook = new XSSFWorkbook();

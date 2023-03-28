@@ -1,21 +1,28 @@
 package vit.homework;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import vit.homework.enums.StudentComparators;
 import vit.homework.enums.UniversityComparators;
+import vit.homework.io.JSONWriter;
 import vit.homework.model.statistic.Statistic;
 import vit.homework.model.student.Student;
 import vit.homework.enums.StudyProfile;
 import vit.homework.model.student.StudentComparatorInterface;
 import vit.homework.model.university.University;
 import vit.homework.model.university.UniversityComparatorIntarface;
-import vit.homework.utils.BuildStatistics;
-import vit.homework.utils.JsonUtil;
-import vit.homework.utils.SelectComparator;
-import vit.homework.utils.MarshalToXML;
+import vit.homework.model.xml.XMLAgregated;
+import vit.homework.utils.*;
 
+import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -29,28 +36,55 @@ public class Main {
     static List<Statistic> statisticList;
     static String xlsFilePath = "src/main/java/vit/homework/resources/universityInfo.xlsx";
     static String xlsStatFilePath = "src/main/java/vit/homework/resources/statistic.xlsx";
+
     static {
         System.setProperty("log4j.configurationFile", "src/main/java/vit/homework/resources/log4j2.xml");
     }
+
     private static final Logger log = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         log.info("We are starting !!!");
-        load_from_xml();
+
+        log.info("Step 1. reading data from .xlsx");
+        load_from_xlsx();
 //        mainXLSX;
 //        mainJSON();
 
+        log.info("Step 2. Create statistics");
         statisticList = BuildStatistics.createStatistic(studentList, universityList);
 //        XlsWriter.writeStatisticToFile(statisticsList, xlsStatFilePath);
 
+
+        log.info("Step 3. Do XMLMarshaling and write to xml");
         try {
             MarshalToXML.writeData(universityList, studentList, statisticList);
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
 
+        log.info("Unmarshalling from XML and converting to JSON.");
+        BufferedInputStream bfInputStr;
+        XMLAgregated readFileData;
+        try {
+            // TODO: get today's file name automatically
+            bfInputStr = new BufferedInputStream(new FileInputStream("src/main/java/vit/homework/resources/xmlReqs/1_req2023-03-28.xml"));
+            readFileData = Converters.convertXmlToObject(bfInputStr);
+            String json = Converters.convertObjectToJson(readFileData);
+            JSONWriter.writeToFile(json, null);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
         log.info("We are done. Goodbye");
     }
+
+
+
 
 
 
@@ -85,9 +119,8 @@ public class Main {
         studentList.stream().map(JsonUtil::serializeStudent).map(JsonUtil::deserializeStudent).forEach(System.out::println);
 
 
-
-
     }
+
     public static void mainXLSX() {
 //        manual_version();
 
@@ -118,7 +151,7 @@ public class Main {
 
         System.out.println("All University comparators in loop");
 
-        for (UniversityComparators univComparatorEnum: UniversityComparators.values()) {
+        for (UniversityComparators univComparatorEnum : UniversityComparators.values()) {
             System.out.println("----------------------------------------------------");
             System.out.println("sorter using " + univComparatorEnum.getComparatorName());
             UniversityComparatorIntarface univComparator = SelectComparator.SelectUniversityComparator(univComparatorEnum);
@@ -135,33 +168,11 @@ public class Main {
         universityList.forEach(System.out::println);
     }
 
-    private static void load_from_xml() {
+    private static void load_from_xlsx() {
         universityList = readXlsUniversities(xlsFilePath);
         studentList = readXlsStudents(xlsFilePath);
     }
 
 
 
-
-    public static void manual_version() {
-        Student st1 = Student.builder()
-                .fullName("Ivan Ivanov Ivanovich")
-                .universityId("BSU")
-                .currentCourseNumber(1)
-                .avgExamScore(4.25f)
-                .build();
-
-        System.out.println(st1);
-
-        System.out.println("----------------------------------");
-
-        University unv1 = new University.UniversityBuilder("Belarusian State University")
-                .setId("1")
-                .setYearOfFoundation(1921)
-                .setMainProfile(StudyProfile.MATH_SCIENTIST)
-                .setShortName("BSU")
-                .build();
-
-        System.out.println(unv1);
-    }
 }

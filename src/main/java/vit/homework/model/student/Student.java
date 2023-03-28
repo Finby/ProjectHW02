@@ -7,13 +7,13 @@ import lombok.Data;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-@Builder
+//@Builder
 //@Data
 @XmlType(propOrder = { "fullName", "universityId", "avgExamScore" })
 public class Student {
     @SerializedName("FIO")
     @XmlElement(name = "studentName")
-    private final String fullName;
+    private String fullName;
 
     @SerializedName("University ID")
     @XmlElement(name = "universityId")
@@ -26,6 +26,21 @@ public class Student {
     @XmlElement(name = "avgScore")
     private float avgExamScore;
 
+    public Student() {
+    }
+
+    public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore) {
+        this.fullName = fullName;
+        this.universityId = universityId;
+        this.currentCourseNumber = currentCourseNumber;
+        this.avgExamScore = avgExamScore;
+    }
+//    public Student(StudentBuilder builder) {
+//        this.fullName = builder.fullName;
+//        this.universityId = builder.universityId;
+//        this.currentCourseNumber = builder.currentCourseNumber;
+//        this.avgExamScore = builder.avgExamScore;
+//    }
 
     public String getUniversityId() {
         return universityId;
@@ -52,5 +67,8 @@ public class Student {
                 ", avgExamScore=" + avgExamScore +
                 '}';
     }
+
+
+
 }
 

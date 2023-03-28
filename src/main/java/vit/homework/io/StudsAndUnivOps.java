@@ -62,12 +62,17 @@ public class StudsAndUnivOps {
 
         while (rows.hasNext()) {
             Row currentRow = rows.next();
-            Student student = Student.builder()
-                    .fullName(currentRow.getCell(1).getStringCellValue())
-                    .universityId(currentRow.getCell(0).getStringCellValue())
-                    .currentCourseNumber((int)currentRow.getCell(2).getNumericCellValue())
-                    .avgExamScore((float)currentRow.getCell(3).getNumericCellValue())
-                    .build();
+//            Student student = Student.builder()
+//                    .fullName(currentRow.getCell(1).getStringCellValue())
+//                    .universityId(currentRow.getCell(0).getStringCellValue())
+//                    .currentCourseNumber((int)currentRow.getCell(2).getNumericCellValue())
+//                    .avgExamScore((float)currentRow.getCell(3).getNumericCellValue())
+//                    .build();
+            Student student = new Student(
+                    currentRow.getCell(1).getStringCellValue(),
+                    currentRow.getCell(0).getStringCellValue(),
+                    (int)currentRow.getCell(2).getNumericCellValue(),
+                    (float)currentRow.getCell(3).getNumericCellValue());
             studentList.add(student);
         }
 

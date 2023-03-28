@@ -1,5 +1,8 @@
 package vit.homework.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import vit.homework.Main;
 import vit.homework.io.XMLWriter;
 import vit.homework.model.statistic.Statistic;
 import vit.homework.model.student.Student;
@@ -17,10 +20,14 @@ import java.util.List;
 
 public class MarshalToXML {
     private static final String UNIVERSITY_XML = "./src/main/java/vit/homework/resources/universities.xml";
-
+    static {
+        System.setProperty("log4j.configurationFile", "src/main/java/vit/homework/resources/log4j2.xml");
+    }
+    private static final Logger log = LogManager.getLogger(Main.class);
     public static void writeData(List<University> universitiesList,
                                  List<Student> studentList,
                                  List<Statistic> statisticList) throws JAXBException {
+        log.info("MarshalToXML.writeData() - Start.");
         UniversitiesXML universitiesXML = new UniversitiesXML((ArrayList<University>) universitiesList);
         StudentXML studentXML = new StudentXML((ArrayList<Student>) studentList);
         StatisticXML statisticXML = new StatisticXML((ArrayList<Statistic>) statisticList);
@@ -32,6 +39,7 @@ public class MarshalToXML {
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 //        marshaller.marshal(universitiesXML, System.out);
 
-        XMLWriter.writeToFile(marshaller, xmlAgregated, UNIVERSITY_XML);
+        XMLWriter.writeToFile(marshaller, xmlAgregated, null);
+        log.info("MarshalToXML.writeData() - End.");
     }
 }

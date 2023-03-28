@@ -11,6 +11,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.time.LocalDate;
 
 public class XMLWriter {
     static {
@@ -20,6 +22,19 @@ public class XMLWriter {
 
     public static void writeToFile(Marshaller marshaller, XMLAgregated xmlAgregated, String filePath) {
         log.log(Level.INFO, "XMLWriter.writeToFile() - Starting.");
+        if (filePath == null) {
+//            ./src/main/java/vit/homework/resources/universities.xml
+            File dirXML = new File("./src/main/java/vit/homework/resources/xmlReqs");
+            if (!dirXML.exists())
+                dirXML.mkdirs();
+            String date = LocalDate.now().toString();
+            try {
+                filePath = Path.of(dirXML.getCanonicalPath(), "req" + date + ".xml").toString();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+        }
 
         FileOutputStream outputStream = null;
         try {

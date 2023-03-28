@@ -185,3 +185,84 @@
 [INFO ] 2023-03-28 01:20:34.328 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
 [INFO ] 2023-03-28 01:20:34.335 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
 [INFO ] 2023-03-28 01:20:34.335 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 20:35:29.326 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 20:35:30.429 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 20:35:30.432 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 20:35:30.744 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 20:35:30.777 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 20:35:30.777 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 20:36:38.638 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 20:36:39.397 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 20:36:39.399 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 20:36:39.550 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 20:44:24.848 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 20:44:26.803 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 20:44:26.833 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 20:44:27.201 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 20:44:27.211 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 20:44:27.211 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 20:49:51.617 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 20:49:54.313 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 20:49:54.348 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 20:49:55.112 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 20:49:55.124 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 20:49:55.125 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 21:14:05.490 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 21:14:06.914 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 21:14:06.917 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 21:14:06.917 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 21:14:06.920 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 21:14:07.213 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 21:14:07.352 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 21:14:07.353 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 21:14:07.353 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 21:17:52.287 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 21:17:53.020 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 21:17:53.023 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 21:17:53.023 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 21:17:53.023 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 21:17:53.168 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 21:17:53.178 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 21:17:53.179 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 21:17:53.179 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 21:33:33.605 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 21:33:35.015 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 21:33:35.017 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 21:33:35.018 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 21:33:35.018 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 21:33:35.529 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 21:33:35.540 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 21:33:35.540 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 21:33:35.541 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 21:36:46.788 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 21:36:47.635 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 21:36:47.638 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 21:36:47.638 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 21:36:47.639 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 21:36:47.809 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 21:36:47.820 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 21:36:47.820 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 21:36:47.820 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 21:36:47.942 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 22:26:14.823 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 22:26:15.931 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 22:26:15.933 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 22:26:15.933 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 22:26:15.934 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 22:26:16.271 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 22:26:16.316 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 22:26:16.316 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 22:26:16.316 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 22:26:16.414 [main] Main - We are done. Goodbye
+[INFO ] 2023-03-28 22:41:02.849 [main] Main - We are starting !!!
+[INFO ] 2023-03-28 22:41:04.279 [main] BuildStatistics - BuildStatistics.createStatistic() started.
+[INFO ] 2023-03-28 22:41:04.282 [main] BuildStatistics - BuildStatistics.createStatistic() finished. Created 4 rows.
+[INFO ] 2023-03-28 22:41:04.282 [main] Main - Do XMLMarshaling
+[INFO ] 2023-03-28 22:41:04.283 [main] Main - MarshalToXML.writeData() - Start.
+[INFO ] 2023-03-28 22:41:04.695 [main] XMLWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 22:41:04.730 [main] XMLWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 22:41:04.731 [main] Main - MarshalToXML.writeData() - End.
+[INFO ] 2023-03-28 22:41:04.731 [main] Main - Unmarshalling from XML and converting to JSON.
+[INFO ] 2023-03-28 22:41:04.834 [main] JSONWriter - XMLWriter.writeToFile() - Starting.
+[INFO ] 2023-03-28 22:41:04.841 [main] JSONWriter - XMLWriter.writeToFile() - Successfully ended.
+[INFO ] 2023-03-28 22:41:04.842 [main] Main - We are done. Goodbye
